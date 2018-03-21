@@ -1,3 +1,29 @@
+
+const list = document.querySelector('#book-list ul')
+list.addEventListener('click',function(e){
+    if (e.target.className == 'delete'){
+        const li = e.target.parentElement;
+        list.removeChild(li)
+    }
+})
+
+
+
+
+
+// var h2 = document.querySelector('#book-list h2')
+// h2.addEventListener("click",function(event){
+// console.log(event.target);
+// console.log(event)
+// })
+// var buttons = document.querySelectorAll('#book-list .delete');
+// buttons.forEach(function(button){
+// button.addEventListener('click',function(e){
+//  const li = e.target.parentElement;
+//  li.parentNode.removeChild(li)
+// })
+// })
+
 // const wmf = document.querySelector('#book-list li:nth-child(2) .name');
 // console.log(wmf)
 // var books = document.querySelectorAll('#book-list li .name')
